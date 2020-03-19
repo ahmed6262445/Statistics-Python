@@ -4,16 +4,16 @@ from collections import defaultdict
 def make_stem_leaves_plot(number_list):
     """
         Arguments:
-        number_list (df or list)
+        number_list (list)
 
         Return:
-            Returns stem and leaves plot as dictionary
+            Returns stem and leaves plot as dictionary of list
     """
     dict_list = defaultdict(list)
 
     for i in range(len(number_list)):
-        key = int(number_list[i]/10)
-        value = number_list[i]%10
+        key = int(int(number_list[i])/10)
+        value = int(number_list[i])%10
         dict_list[key].append(value)    
         dict_list[key].sort()
 
