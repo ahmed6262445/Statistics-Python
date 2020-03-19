@@ -9,5 +9,7 @@ for  i in range( len(my_list) ):
     my_dict[key].append(value)    
     my_dict[key].sort()
 
-# my_dict.s
-print( my_dict)
+sorted(my_dict.keys()) 
+
+for key,value in sorted(my_dict.items()):
+    print(f"{key}:\t{value} \ttotal :{len(value)}") 
